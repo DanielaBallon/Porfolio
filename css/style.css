@@ -28,7 +28,23 @@ body{
     width:80%;
     padding:20px;
     text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
 }
+
+.custom-section{
+    padding-top:50px;
+
+}
+.card-text{
+    font-family: 'New Tegomin'
+}
+.cb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
 footer {
     background:rgb(91, 13, 103);
     padding: 20px 0;
