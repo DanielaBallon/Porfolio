@@ -1,15 +1,23 @@
 :root {
-    --main-color: white;
+
     --bg-primary: #2f3e46;
     --bg-secondary: #1a364e;
-    --bg-rose: #a35c6e;
-    --text-secundary: #E6ED07;
-    --text-primary: #ef8216;
-    --text-tert: #ffff1c;
-    --border-image: white;
+    --bg-yel: #ffff1c;
+
+
+    --text-yel: #ffff1c;
+    --text-primary: #ffffff;
+    --text-black: #000000;
+
+    --text-yel-som: #9a0d9cde;
+    --border-image: #ff09ce;
+
 
 }
 
+body {
+    background-color: var(--bg-primary) !important;
+}
 
 /*Barra de navegación*/
 .navbar {
@@ -23,7 +31,7 @@
 }
 
 .icono-nav {
-    color: var(--text-tert) !important;
+    color: var(--text-yel) !important;
     transition: color 0.3s ease;
 }
 
@@ -37,12 +45,12 @@
 }
 
 .icono-nav:hover {
-    color: #ffcc00 !important;
+    color: var(--text-yel-som) !important;
 
 }
 
 .navbar li a:hover {
-    color: #ffcc00 !important;
+    color: var(--text-yel) !important;
 
 }
 
@@ -71,7 +79,7 @@ body h1 {
 }
 
 .seccion-clara {
-    background-color: white;
+    background-color: #1a364e;
     color: black;
 }
 
@@ -83,8 +91,9 @@ body h1 {
 }
 
 .seccion-descripcion {
-    font-size: 2rem;
-    color: #584e4e
+    font-size: 1.5rem;
+    color: white;
+
 }
 
 .texto-negro {
@@ -97,7 +106,7 @@ body h1 {
 
 strong {
 
-    color: var(--text-tert);
+    color: var(--text-yel);
 }
 
 .texto-agradeciemiento {
@@ -112,8 +121,21 @@ strong {
 .btn-info {
     font-size: 1.1rem;
     margin: 50px;
+    background: var(--border-image) !important;
+    border-color: var(--text-yel-som) !important;
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0.8;
+
+}
 
 
+
+.btn-info:hover {
+    opacity: 1;
+    background: var(--bg-yel);
+    color: var(--text-primary);
+    box-shadow: 1px 1px 6px var(--text-tert);
 }
 
 .hr-section {
@@ -121,8 +143,6 @@ strong {
     width: 60%;
     background: linear-gradient(to right, #E6ED07, #FFD700) !important;
     box-shadow: 0 0 20px rgb(255, 255, 255);
-
-    /* Ajusta según tu preferencia */
 }
 
 
@@ -166,14 +186,14 @@ strong {
 
 .hero-img:hover {
     transform: scale(1.1);
-    /* Escala la imagen al pasar el mouse */
+
 }
 
 
 
 .hero .profesiones {
     font-weight: bold !important;
-    color: var(--text-tert);
+    color: var(--text-yel);
     font-size: normal !important;
     font-family: monospace, cursive;
 
@@ -192,7 +212,7 @@ strong {
 
 .btn-cv {
     text-decoration: none;
-    background: var(--text-secundary);
+    background: var(--bg-yel);
     padding: 10px 30px;
     color: #000;
     font-weight: bold;
@@ -209,7 +229,7 @@ strong {
 
 .btn-cv:hover {
     opacity: 1;
-    background: var(--text-tert);
+    background: var(--border-image);
     color: var(--text-primary);
     box-shadow: 1px 1px 6px var(--text-tert);
 }
@@ -265,23 +285,12 @@ strong {
 }
 
 
-
-/*habilidades item */
-
-
-
-.lista-habilidades {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
-    /* box-shadow: 0px 1px 4px 1px white; */
-    transition: all 0.2s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.img-habilidades {
+    float: right;
+    width: 50%;
+    height: auto;
 }
+
 
 /*proyectos*/
 .proyectos-recientes {
@@ -361,11 +370,12 @@ footer {
     min-height: 200px;
     padding: 20px;
 
+
 }
 
 .contacto .rectangulo {
-    margin-top: -5rem;
-    background-color: royalblue;
+
+    background-color: var(--text-yel-som);
     border-radius: 10px;
     box-shadow: 0px 1px 4px 1px white;
 }

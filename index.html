@@ -74,11 +74,24 @@
         <span class="typed"> </span>
       </div>
       <div id="cadenas-texto">
-        <h2><i class="profesiones">Analista de Sistemas</i></h2>
-        <h2><i class="profesiones">Programadora web</i></h2>
+        <h3><i class="profesiones">Analista de Sistemas</i></h3>
+        <h3><i class="profesiones">Programadora web</i></h3>
       </div>
     </div>
-    <hr class="hr-section ">
+    <!-- <hr class="hr-section "> -->
+    <div style="overflow: hidden;">
+      <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg"
+        style="fill: #9e00a8; width: 100%; height: 95px; transform: rotate(180deg);">
+        <path
+          d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+          opacity=".25" />
+        <path
+          d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+          opacity=".5" />
+        <path
+          d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+      </svg>
+    </div>
   </section>
 
   <!-- Seccion sobre mi  -->
@@ -135,7 +148,7 @@
       <div class="row">
         <div class="col-md-6">
           <!-- iconos de tecnologías -->
-          <h2 class="seccion-titulo text-center">Tecnologias</h2>
+          <h4 class=" seccion-subtitulo text-center">Tecnologias</h4>
           <div class="row">
             <div class=" row justify-content-center  iconos-tecno">
               <div class="col col-tc-ic"> <img class="img-fluid " src="Imagenes/iconos/ico-node.png" alt="node.js">
@@ -184,30 +197,31 @@
 
         <div class="col-md-6">
           <!-- Destaco habilidades blandas -->
-          <h2 class="seccion-titulo text-center">Habilidades Blandas</h2>
-          <div class="container container-habilidades ">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item lista-habilidades list-group-item-dark">Comunicación efectiva.</li>
-              <li class="list-group-item lista-habilidades">Trabajo en equipo</li>
-              <li class="list-group-item lista-habilidades">Adaptabilidad</li>
-              <li class="list-group-item lista-habilidades">Resolución de Problemas</li>
-              <li class="list-group-item lista-habilidades">Gestión del Tiempo</li>
-              <li class="list-group-item lista-habilidades">Creatividad</li>
-              <li class="list-group-item lista-habilidades">Empatía</li>
-              <li class="list-group-item lista-habilidades">Orientación al Cliente</li>
-              <li class="list-group-item lista-habilidades">Liderazgo</li>
-              <li class="list-group-item lista-habilidades">Aprendizaje Continuo</li>
-            </ul>
+          <div class=" container">
+            <div class="row">
+              <h4 class="seccion-subtitulo text-center">Aptitudes complementarias</h4>
+              <div class="container-habilidades ">
+                <ul class="list-group list-group-flush">
+                  <li class="lista-habilidades">Comunicación efectiva.</li>
+                  <li class="lista-habilidades">Trabajo en equipo</li>
+                  <li class="lista-habilidades">Adaptabilidad</li>
+                  <li class="lista-habilidades">Resolución de Problemas</li>
+                  <li class="lista-habilidades">Gestión de proyectos</li>
+                  <li class="lista-habilidades">Aprendizaje Continuo</li>
+                </ul>
+                <img src="/Imagenes/lista-habilidades.svg" alt="" class="img-habilidades">
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <hr class="hr-section ">
   </section>
 
 
   <!-- Seccion proyectos -->
-  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-    <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+  <section id="proyectos" class="proyectos-recientes seccion-oscura d-flex flex-column">
+    <h2 class="seccion-titulo">Mis proyectos</h2>
     <h3 class="seccion-descripcion"> Estos son algunos proyectos que he creado recientemente</h3>
     <!-- Galeria de proyectos  -->
     <div class="container text-center proyectos-contenedor">
@@ -272,7 +286,7 @@
       </div>
     </div>
     <a href="https://github.com/DanielaBallon" target="_blank" rel="noopener noreferrer">
-      <button type=" button" class="btn btn-info">
+      <button type=" button" class="btn-cv">
         ver más proyectos
         <i class="bi bi-arrow-right-circle-fill"></i>
       </button>
@@ -302,29 +316,30 @@
         </div>
       </div>
     </div>
-
-    <!-- /Pie de pagina -->
-    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
-      <p class="footer-texto text-center"> Creemos un proyectos juntos.</p>
-      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-        <a href="https://ar.linkedin.com/in/daniela-ballon" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://github.com/DanielaBallon" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-twitter"></i>
-        </a>
-        <a href="mailto:lic.danielaballon@gmail.com" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-envelope"></i>
-        </a>
-      </div>
-      <div class="derechos-de-actor"> &#169; 2021 Daniela Ballón. Todos los derechos reservados.</div>
-      <div data-aos="fade-up">Contenido animado</div>
-
-    </footer>
   </section>
+
+  <!-- /Pie de pagina -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <hr class="hr-section ">
+    <p class="footer-texto text-center"> Creemos un proyectos juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://ar.linkedin.com/in/daniela-ballon" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://github.com/DanielaBallon" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="mailto:lic.danielaballon@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="derechos-de-actor"> &#169; 2021 Daniela Ballón. Todos los derechos reservados.</div>
+    <div data-aos="fade-up">Contenido animado</div>
+
+  </footer>
 
   <!--Hojas de js-->
   <!-- Enlace a Bootstrap JS -->
