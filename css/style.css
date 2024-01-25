@@ -180,6 +180,7 @@ strong {
     margin: 20px;
     border: solid 2px var(--border-image);
     box-shadow: 16px 14px 20px rgba(9, 9, 9, 0.989);
+    border-radius: 5%;
     transition: transform 0.3s ease;
 }
 
