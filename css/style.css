@@ -294,65 +294,105 @@ strong {
 
 
 /*proyectos*/
-.proyectos-recientes {
-    padding: 40px;
 
+
+.card-group .card {
+    width: 18rem;
+    margin-right: 1rem;
+    background-color: var(--bg-secondary);
 }
 
-
-.proyectos-recientes img {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    display: block;
-    transition: all 0.2s ease;
-
-
+.card-group:last-child .card {
+    margin-right: 0;
 }
 
-.proyecto-contenedor {
-    padding-top: 60px;
-    margin-bottom: 40px;
-}
-
-.overlay {
-    transition: all 0.2s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-}
-
-.overlay p {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 0;
-
-}
-
-.proyecto {
+.card .proyecto {
     position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+}
+
+.card .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.proyecto:hover img {
-    opacity: 0.2;
+.card:hover .overlay {
+    opacity: 2;
 }
 
-.proyecto:hover .overlay {
+.card .proyecto .overlay p {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+
+}
+
+
+.card .proyecto .overlay a {
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay a {
     opacity: 1;
 }
 
+.card .proyecto .overlay .icono1 {
+    left: 30%;
 
+}
 
-.overlay i {
-    color: #000;
-    font-size: 60px;
+.card .proyecto .overlay .icono2 {
+    right: 30%;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.card-text {
+    color: white;
+}
+
+.card-iconos-tegno img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
     margin: 10px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 5% !important;
 
 }
 
@@ -494,9 +534,10 @@ footer {
 
 }
 
-/* @media screen and (max-width: 700px) {
-    .hero-img {
-        max-width: 80%;
+/* Ajuste para que las tarjetas ocupen todo el ancho en dispositivos más pequeños */
+@media (max-width: 768px) {
+    .carousel-item .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
-
-} */
+}

@@ -13,5 +13,9 @@ showCursor: true,
 cursorChar: '|',
 contentType: 'html',
 
+ });
 
-});
+ let animacion = anime({
+    targets: '.css-selector-demo .el',
+    translateX: 250
+  });
