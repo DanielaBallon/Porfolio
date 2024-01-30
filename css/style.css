@@ -270,19 +270,18 @@ strong {
 /* Transición para la imagen en col-tc-ic */
 .iconos-tecno .col-tc-ic img {
     transition: transform 0.3s ease-in-out;
-    /* Cambia la propiedad 'transform' durante 0.3 segundos con una aceleración y desaceleración suave */
+
 }
 
 /* Estilo por defecto para el texto en text-iconos */
 .iconos-tecno .text-iconos {
     transition: color 0.3s ease-in-out;
-    /* Cambia el color del texto durante 0.3 segundos con una aceleración y desaceleración suave */
+
 }
 
 /* Estilo para el texto cuando el mouse pasa sobre el contenedor */
 .col-tc-ic:hover img {
     transform: scale(1.4);
-    /* Hace que la imagen sea un 20% más grande cuando el mouse pasa sobre el contenedor */
 }
 
 
@@ -295,6 +294,19 @@ strong {
 
 /*proyectos*/
 
+.proyectos-contenedor {
+    display: flex;
+    margin: 5px auto;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--bg-primary);
+
+
+}
 
 .card-group .card {
     width: 18rem;
@@ -309,6 +321,19 @@ strong {
 .card .proyecto {
     position: relative;
     overflow: hidden;
+}
+
+
+
+.card-text {
+    color: white;
+
+}
+
+.card-iconos-tegno {
+
+    margin-top: auto;
+
 }
 
 .card img {
@@ -370,25 +395,20 @@ strong {
 
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-}
 
 .card-text {
     color: white;
+    text-align: justify;
+
 }
 
 .card-iconos-tegno img {
     width: 40px;
     height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px;
-    margin: 10px;
+    padding: 1px;
+    margin: 5px;
 }
+
 
 .carousel-control-next,
 .carousel-control-prev {
@@ -534,7 +554,6 @@ footer {
 
 }
 
-/* Ajuste para que las tarjetas ocupen todo el ancho en dispositivos más pequeños */
 @media (max-width: 768px) {
     .carousel-item .col-md-4 {
         flex: 0 0 100%;
