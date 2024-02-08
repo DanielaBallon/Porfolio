@@ -79,7 +79,7 @@ body h1 {
 }
 
 .seccion-clara {
-    background-color: #1a364e;
+    background-color: #ffffff !important;
     color: black;
 }
 
@@ -191,7 +191,9 @@ strong {
 }
 
 
-
+.hero h2{
+    color:#E6ED07
+}
 .hero .profesiones {
     font-weight: bold !important;
     color: var(--text-yel);
